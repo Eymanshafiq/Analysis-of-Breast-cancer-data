@@ -1,0 +1,6 @@
+radius=df["radius_mean"].to_numpy()
+print("Radius:",np.mean(radius))
+print("Standard Deviation",np.std(radius))   
+print("Maximum value of radius:",np.max(radius))
+print("Minimum value of radius:",np.min(radius))
+print("Diagnostic counts:",df["diagnosis"].value_counts())
