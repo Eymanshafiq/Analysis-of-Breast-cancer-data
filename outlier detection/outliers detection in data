@@ -1,0 +1,9 @@
+df = pd.read_csv(r"C:\Users\eyman\Downloads\breast-cancer.csv")
+data=df["radius_mean"]
+m=np.mean(data)
+s=np.std(data)
+z=(data-m)/s
+outliers=df[np.abs(z)>3]
+df_no_outliers=df[np.abs(z)<3]
+print(outliers)
+print(df_no_outliers)
